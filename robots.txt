@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://nghaffari.github.io//master/sitemap.xml
+Sitemap: https://nghaffari.github.io//nghaffari//sitemap.xml
