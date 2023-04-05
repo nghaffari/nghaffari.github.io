@@ -14,14 +14,15 @@
       year: 2019
       description:
         - Conducted cross-disciplinary mathematical research on ‘optimal transportation’ topic
-        - Developed several results and algorithmic applications for Wasserstein barycenters.
+        - Developed several results and algorithmic applications for Wasserstein barycenters
+        - Applied optimal transport concepts to consensus modeling project with Sandia National Labs
         - Advisor - Dr. Stephen G. Walker
     - title: Masters - Statistics
       institution: University of Texas at Austin
       year: 2014
       description:
-        - Researched into stable distribution theory
-        - Implemented MCMC routines and an FFT method for inference
+        - Researched stable distribution theory and implemented MCMC and FFT routines for inference
+        - Worked on product defect classification project with Freescale, Inc.
         - Advisor - Dr. Carlos Carvalho
     - title: BA - Plan II Honors
       institution: University of Texas at Austin
@@ -35,6 +36,7 @@
       year: 2012
       description:
         - Studied corporate finance, supply chain management, and general business
+        - Participated in Brass Rings practicum course with Freescale, Inc.
     - title: BS - Applied Mathematics
       institution: University of Texas at Austin
       year: 2012
