@@ -77,12 +77,11 @@
       institution: University of Zurich, Zurich, Switzerland
       year: 1909 - 1911
 
-- title: Open Source Projects
-  type: time_table
+- title: Publications
+  type: list
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - 1. Ghaffari, N. and Walker, S.G.<b>Parseval"'"s Identity and Optimal Transport Maps</b>.<i>Statistics and Probability Letters</i> March 2021; 170":" 108989
+    - 2. Ghaffari, N. and Walker, S.G.<b>W<sub>2</sub> Barycenters for Radially Related Distributions</b>.<i>Statistics and Probability Letters</i> April 2023; 195":" 109788
 
 - title: Honors and Awards
   type: time_table
