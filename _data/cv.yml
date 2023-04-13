@@ -6,7 +6,8 @@
     - name: Languages (natural)
       value: English, Persian
     - name: Languages (computer)
-      items:
+      value:
+        items:
           - Python
           - R
 
