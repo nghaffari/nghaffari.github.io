@@ -6,10 +6,7 @@
     - name: Languages (natural)
       value: English, Persian
     - name: Languages (computer)
-      value:
-        items:
-          - Python
-          - R
+      value: Python, R, SQL
 
 - title: Education
   type: time_table
