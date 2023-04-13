@@ -3,8 +3,12 @@
   contents:
     - name: Full Name
       value: Novin Ghaffari
-    - name: Languages
+    - name: Languages (natural)
       value: English, Persian
+    - name: Languages (computer)
+      value: 
+        - Python
+        - R
 
 - title: Education
   type: time_table
