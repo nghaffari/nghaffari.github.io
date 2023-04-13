@@ -80,8 +80,10 @@
 - title: Publications
   type: list
   contents:
-    - 1. Ghaffari, N. and Walker, S.G.<b>Parseval"'"s Identity and Optimal Transport Maps</b>.<i>Statistics and Probability Letters</i> March 2021; 170":" 108989
-    - 2. Ghaffari, N. and Walker, S.G.<b>W<sub>2</sub> Barycenters for Radially Related Distributions</b>.<i>Statistics and Probability Letters</i> April 2023; 195":" 109788
+    - >-
+      1. Ghaffari, N. and Walker, S.G.<b>Parseval’s Identity and Optimal Transport Maps</b>.<i>Statistics and Probability Letters</i> March 2021; 170: 108989
+    - >-
+      2. Ghaffari, N. and Walker, S.G.<b>W<sub>2</sub> Barycenters for Radially Related Distributions</b>.<i>Statistics and Probability Letters</i> April 2023; 195: 109788
 
 - title: Honors and Awards
   type: time_table
