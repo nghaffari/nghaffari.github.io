@@ -6,7 +6,7 @@
     - name: Languages (natural)
       value: English, Persian
     - name: Languages (computer)
-      value: Python, R, SQL
+      value: Excel, LaTeX, Python, R, SQL
 
 - title: Education
   type: time_table
@@ -63,20 +63,47 @@
             - Developed wrapper functions for easy access to PubChem’s PUG REST API via pubchempy
             - Designed functions for accessing JSON data from Pubchem’s PUG_VIEW API
             - Implemented functions for downloaded and viewing spectroscopy output images for calibrating lab equipment
-        - title: 
+        - title: Supported internal clinical trials with several data functions
+          contents:
+            - Provided experimental design methodology expertise for organizing clinical trial plans
+            - Implemented power calculations for sample size planning
+            - Developed analytics and data visualization for trial outcome reporting, packaging results into R Shiny app
     - title: Lead Content Developer and Faculty
       institution: SetCONNECT, Inc.
       year: Aug 2020 - present
       description:
-        - Description 1.
-        - Description 2.
+        - title: Developed materials and content, including assignments, quizzes, projects, and recordings, for several courses
+          contents:
+            - Data Analytics with Python
+            - Intro to Statistics and Data Visualization in R
+            - Business Statistics
+            - Predictive Modeling for Real-World Problems
+        - title: Developed seminars and introductory courses on statistics for several Indian corporations and educational institutions
+          contents:
+            - Indo-American Chamber of Commerce
+            - TVS Group
+            - Reliance Financial
+            - ZF CVS
+            - Vedanta Aluminium
+            - NITK
+        - Participated in business development strategy and planning, designing core operational tactics for future business directions
     - title: Adjunct Faculty
       institution: Southern Methodist University
       year: Oct 2021 - present
+      description:
+        - Taught ‘Doing Data Science,’ an introductory data science course covering the basics of statistics, modeling, and common tech platforms for working professional data science master’s students
+        - Troubleshooted several issues in the course material related to outdated content
+        - Assisted on monthly planning meetings to determine scope and design of the data science program
     - title: Freelance Consultant
       institution: Self-Employed
       year: Jun 2020 - May 2022
-      description:
+      description: 
+        - title: Worked with clients, from academia to industry, on a variety of data analysis and modeling challenges
+          contents:
+            - Performed analysis estimating genetic content of hybrid plants for Ag Biotech, Inc reducing royalties owed by client by 30%
+            - Advised PhD researcher on decision tree methods to better model nonlinear effects present in field data
+            - Assisted several PhD researchers on gathering and analyzing survey data
+            - Assisted PhD researcher on implementing panel data model for longitudinal data
 
 - title: Academic Experience
   type: time_table
@@ -174,4 +201,7 @@
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Health:</u> adaptogens, exercise science, etc.
+    - <u>History:</u> 
+    - <u>Language:</u> etymology, linguistics, etc.
+    - <u>Nature:</u> 
