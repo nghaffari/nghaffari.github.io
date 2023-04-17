@@ -1,7 +1,7 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
+title: Warranty Cost Analysis 
+description: Statistical analysis and predictive modeling of warranty claims for a major global automotive parts manufacturer
 img: assets/img/12.jpg
 importance: 1
 category: work
