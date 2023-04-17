@@ -111,12 +111,12 @@
       description:
         - Assisted on statistics courses ranging from introductory to graduate level
         - title: Ran computer lab sessions on R for students which involved 
-        contents:
+          contents:
           - presenting and explaining R code 
           - directing undergraduate teaching assistants
           - aiding students with statistical difficulties and computer issues
         - title: Managed undergraduate teaching assistants for large classes delegating tasks and establishing protocols for 
-        content: 
+          contents: 
           - grading student assignments and quizzes, 
           - tutoring students
           - reporting issues in grading and student performance
@@ -142,7 +142,7 @@
         - Worked on product quality analysis, narrowing scope to an unsupervised clustering problem, helping identify systematic product defects
         - Implemented spectral dimensionality reduction preprocessing step for more efficient computation
         - title: Developed unsupervised, latent cluster allocation method and a mixture model for modeling defect patterns
-        contents:
+          contents:
           - Implemented a ‘distance-dependent Chinese restaurant process’ for learning product defect patterns
           - Used Bayesian hyperparameter estimation for tailoring algorithm performance
           - Employed a Gaussian mixture model to model defect patterns on wafer within each identified cluster
