@@ -108,13 +108,6 @@
     - title: Teaching Assistant
       institution: University of Texas at Austin
       year: Sept 2012 - May 2019
-            - Developed wrapper functions for easy access to PubChem’s PUG REST API via pubchempy
-            - Designed functions for accessing JSON data from Pubchem’s PUG_VIEW API
-            - Implemented functions for downloaded and viewing spectroscopy output images for calibrating lab equipment
-        - title: 
-    - title: Lead Content Developer and Faculty
-      institution: SetCONNECT, Inc.
-      year: Aug 2020 - present
       description:
         - Assisted on statistics courses ranging from introductory to graduate level
         - title: Ran computer lab sessions on R for students which involved 
