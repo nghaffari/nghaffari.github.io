@@ -130,14 +130,6 @@
     - title: Research Assistant
       institution: University of Texas at Austin - Freescale Semiconductors, Inc.
       year: Jan 2014 - May 2014
-        - Description 1.
-        - Description 2.
-    - title: Adjunct Faculty
-      institution: Southern Methodist University
-      year: Oct 2021 - present
-    - title: Freelance Consultant
-      institution: Self-Employed
-      year: Jun 2020 - May 2022
       description:
         - Worked on product quality analysis, narrowing scope to an unsupervised clustering problem, helping identify systematic product defects
         - Implemented spectral dimensionality reduction preprocessing step for more efficient computation
