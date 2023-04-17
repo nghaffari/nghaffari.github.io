@@ -78,6 +78,67 @@
       year: Jun 2020 - May 2022
       description:
 
+- title: Academic Experience
+  type: time_table
+  contents:
+    - title: Research Assistant 
+      institution: University of Texas at Austin - Sandia National Laboratories
+      year: Apr 2018 - Sept 2018
+      description:
+        - Developed algorithmic routines for consolidating data across experiments into a consensus model, enabling separate modeling of uncertainty within experiments
+        - Developed benchmark for assessing efficacy of new solutions using previous solution ‘consensus Monte Carlo’
+        - title: Implemented two methods for consensus modeling with a flexibility/scalability tradeoff
+          contents:
+            - >- 
+            WASP (Wasserstein scalable posteriors) method: highly flexible but limited scalability
+            - >- 
+            Fixed-point iterative barycenter method: limited to location-scale families but highly scalable 
+    - title: Research Assistant
+      institution: University of Texas at Austin
+      year: Jun 2016 - Aug 2017
+      description:
+        - Research assistantship working with Dr. Michael Daniels
+        - Assisted in research extending ‘network meta-analysis’ methods to scenarios with instrumental variables and missing data
+        - title: Research involved simulation as well as exploratory implementations with the following
+          contents:
+            - JAGS
+            - OpenBUGS
+            - Stan
+    - title: Teaching Assistant
+      institution: University of Texas at Austin
+      year: Sept 2012 - May 2019
+      description:
+        - Assisted on statistics courses ranging from introductory to graduate level
+        - title: Ran computer lab sessions on R for students which involved 
+        contents:
+          - presenting and explaining R code 
+          - directing undergraduate teaching assistants
+          - aiding students with statistical difficulties and computer issues
+        - title: Managed undergraduate teaching assistants for large classes delegating tasks and establishing protocols for 
+        contents: 
+          - grading student assignments and quizzes, 
+          - tutoring students
+          - reporting issues in grading and student performance
+          - managing and reporting timecards 
+    - title: Short Course Instructor
+      institution: University of Texas at Austin
+      year: May 2015
+      description:
+        - Taught week-long introductory course on R, developing examples for instruction and balancing basic and advanced concepts for diverse audience needs
+        - Directed undergraduate assistant instructors, reviewing code and content before each class and setting guidelines for aiding students with statistical and computer related issues
+    - title: Research Assistant
+      institution: University of Texas at Austin - Freescale Semiconductors, Inc.
+      year: Jan 2014 - May 2014
+      description:
+        - Worked on product quality analysis, narrowing scope to an unsupervised clustering problem, helping identify systematic product defects
+        - Implemented spectral dimensionality reduction preprocessing step for more efficient computation
+        - title: Developed unsupervised, latent cluster allocation method and a mixture model for modeling defect patterns
+        contents:
+          - Implemented a ‘distance-dependent Chinese restaurant process’ for learning product defect patterns
+          - Used Bayesian hyperparameter estimation for tailoring algorithm performance
+          - Employed a Gaussian mixture model to model defect patterns on wafer within each identified cluster
+        - Solution mitigated the need for engineer labor in identifying product defects, saving 100+ hours per product line
+
 
 - title: Publications
   type: list
