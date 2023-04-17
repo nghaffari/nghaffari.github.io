@@ -91,7 +91,70 @@
           contents:
             - WASP (Wasserstein scalable posteriors) method highly flexible but limited scalability
             - Fixed-point iterative barycenter method limited to location-scale families but highly scalable 
-   
+    - title: Research Assistant
+      institution: University of Texas at Austin
+      year: Jun 2016 - Aug 2017
+      description:
+        - Research assistantship working with Dr. Michael Daniels
+        - Assisted in research extending ‘network meta-analysis’ methods to scenarios with instrumental variables and missing data
+        - title: Research involved simulation as well as exploratory implementations with the following
+            - Database was developed and implemented in MySQL
+            - Data schema design was implemented using sqlalchemy in Python
+        - title: Developed API access tools in Python to assistant lab scientists with research
+          contents:
+            - JAGS
+            - OpenBUGS
+            - Stan
+    - title: Teaching Assistant
+      institution: University of Texas at Austin
+      year: Sept 2012 - May 2019
+            - Developed wrapper functions for easy access to PubChem’s PUG REST API via pubchempy
+            - Designed functions for accessing JSON data from Pubchem’s PUG_VIEW API
+            - Implemented functions for downloaded and viewing spectroscopy output images for calibrating lab equipment
+        - title: 
+    - title: Lead Content Developer and Faculty
+      institution: SetCONNECT, Inc.
+      year: Aug 2020 - present
+      description:
+        - Assisted on statistics courses ranging from introductory to graduate level
+        - title: Ran computer lab sessions on R for students which involved 
+        contents:
+          - presenting and explaining R code 
+          - directing undergraduate teaching assistants
+          - aiding students with statistical difficulties and computer issues
+        - title: Managed undergraduate teaching assistants for large classes delegating tasks and establishing protocols for 
+        content: 
+          - grading student assignments and quizzes, 
+          - tutoring students
+          - reporting issues in grading and student performance
+          - managing and reporting timecards 
+    - title: Short Course Instructor
+      institution: University of Texas at Austin
+      year: May 2015
+      description:
+        - Taught week-long introductory course on R, developing examples for instruction and balancing basic and advanced concepts for diverse audience needs
+        - Directed undergraduate assistant instructors, reviewing code and content before each class and setting guidelines for aiding students with statistical and computer related issues
+    - title: Research Assistant
+      institution: University of Texas at Austin - Freescale Semiconductors, Inc.
+      year: Jan 2014 - May 2014
+        - Description 1.
+        - Description 2.
+    - title: Adjunct Faculty
+      institution: Southern Methodist University
+      year: Oct 2021 - present
+    - title: Freelance Consultant
+      institution: Self-Employed
+      year: Jun 2020 - May 2022
+      description:
+        - Worked on product quality analysis, narrowing scope to an unsupervised clustering problem, helping identify systematic product defects
+        - Implemented spectral dimensionality reduction preprocessing step for more efficient computation
+        - title: Developed unsupervised, latent cluster allocation method and a mixture model for modeling defect patterns
+        contents:
+          - Implemented a ‘distance-dependent Chinese restaurant process’ for learning product defect patterns
+          - Used Bayesian hyperparameter estimation for tailoring algorithm performance
+          - Employed a Gaussian mixture model to model defect patterns on wafer within each identified cluster
+        - Solution mitigated the need for engineer labor in identifying product defects, saving 100+ hours per product line
+
 - title: Publications
   type: list
   contents:
