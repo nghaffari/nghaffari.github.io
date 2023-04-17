@@ -89,13 +89,9 @@
         - Developed benchmark for assessing efficacy of new solutions using previous solution ‘consensus Monte Carlo’
         - title: Implemented two methods for consensus modeling with a flexibility/scalability tradeoff
           contents:
-            - >- 
-            WASP (Wasserstein scalable posteriors) method: highly flexible but limited scalability
-            - >- 
-            Fixed-point iterative barycenter method: limited to location-scale families but highly scalable 
+            - WASP (Wasserstein scalable posteriors) method highly flexible but limited scalability
+            - Fixed-point iterative barycenter method limited to location-scale families but highly scalable 
    
-
-
 - title: Publications
   type: list
   contents:
