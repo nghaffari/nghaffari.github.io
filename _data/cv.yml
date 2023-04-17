@@ -46,40 +46,6 @@
         - Completed math degree in 1 year in preparation for graduate school
 
 
-- title: Industry Experience
-  type: time_table
-  contents:
-    - title: Head of Data and Analytics
-      institution: Nulixir, Inc.
-      year: Jan 2021 - present
-      description:
-        - Conducted background research and developed reporting covering business intelligence, marketing, and clinical scientific data for nutraceuticals
-        - Description 2.
-        - title: Developed a rudimentary database for research and formulation purposes
-          contents:
-            - Database was developed and implemented in MySQL
-            - Data schema design was implemented using sqlalchemy in Python
-        - title: Developed API access tools in Python to assistant lab scientists with research
-          contents:
-            - Developed wrapper functions for easy access to PubChem’s PUG REST API via pubchempy
-            - Designed functions for accessing JSON data from Pubchem’s PUG_VIEW API
-            - Implemented functions for downloaded and viewing spectroscopy output images for calibrating lab equipment
-        - title: 
-    - title: Lead Content Developer and Faculty
-      institution: SetCONNECT, Inc.
-      year: Aug 2020 - present
-      description:
-        - Description 1.
-        - Description 2.
-    - title: Adjunct Faculty
-      institution: Southern Methodist University
-      year: Oct 2021 - present
-    - title: Freelance Consultant
-      institution: Self-Employed
-      year: Jun 2020 - May 2022
-      description:
-
-
 - title: Academic Experience
   type: time_table
   contents:
