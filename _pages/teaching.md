@@ -13,7 +13,7 @@ For now, this page is assumed to be a static description of your courses. You ca
 
 Organize your courses by years, topics, or universities, however you like!
 
-<!-- pages/projects.md -->
+<!-- pages/teaching.md -->
 <div class="teaching">
 {%- if site.enable_teaching_categories and page.display_categories %}
   <!-- Display categorized projects -->
@@ -25,7 +25,7 @@ Organize your courses by years, topics, or universities, however you like!
   {% if page.horizontal -%}
   <div class="container">
     <div class="row row-cols-2">
-    {%- for project in sorted_teaching -%}
+    {%- for teaching in sorted_teaching -%}
       {% include teaching_horizontal.html %}
     {%- endfor %}
     </div>
@@ -40,7 +40,7 @@ Organize your courses by years, topics, or universities, however you like!
   {% endfor %}
 
 {%- else -%}
-<!-- Display projects without categories -->
+<!-- Display teaching without categories -->
   {%- assign sorted_teaching = site.teaching | sort: "importance" -%}
   <!-- Generate cards for each project -->
   {% if page.horizontal -%}
