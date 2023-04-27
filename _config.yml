@@ -122,7 +122,7 @@ bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 blog_name: Twilighter # blog_name will be displayed in your blog page
 blog_nav_title: blog # your blog must have a title for it to be displayed in the nav bar
-blog_description: a collection of roaming essays on various topics\n\nThen to the rolling Heavn itself I cried,\nAsking, \"What Lamp had Destiny to guide\n\"Her little Children stumbling in the Dark?\"\nAnd -- \"A blind Understanding!\" Heavn replied.
+blog_description: a collection of roaming essays on various topics
 
 permalink: /blog/:year/:title/
 
