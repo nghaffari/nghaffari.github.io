@@ -1,9 +1,9 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image
+title: Consensus Modeling
+description: Forming a consensus model from several inputs
 img: assets/img/3.jpg
-importance: 2
+importance: 1
 category: work
 ---
 
