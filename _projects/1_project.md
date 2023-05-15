@@ -3,7 +3,7 @@ layout: page
 title: Warranty Cost Analysis 
 description: Statistical analysis and predictive modeling of warranty claims for a major global automotive parts manufacturer
 img: assets/img/12.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
