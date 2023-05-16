@@ -32,13 +32,38 @@ We may prefer one or the other, depending on the application of interest. In a n
 
 **Scenario 2**: Imagine each sensor runs all day, and is on average unbiased, but there is some noise in the mean value of each distribution. In this case we prefer quantile averaging as each sensor is measuring the same phenomenon but has its own noise, i.e. the full distribution is truly unimodal.
 
+# From Probability Distances to Probability Averaging
+
+Closely related to the idea of averaging is the idea of distance. An average cannot be taken without some notion of distance. 
+
+The Fisher-Rao and the Wasserstein metrics are two statistical distances between probability distributions closely related to the idea of probability and quantile averaging. The Wasserstein metric may be used to obtain barycenters; in 1D this equivalent to quantile averaging, and it generalizes the idea of quantile averaging to higher dimensions, as quantiles do not exist beyond 1D. Probability averaging minimizes the Kullback-Liebler divergence, a quantity closely related to the definition of the Fisher-Rao distance, which may also be used to construct barycenters. 
+
+The mathematics behind these ideas is bit advanced. However, a recent paper (<a href="https://doi.org/10.1109/SSP.2016.7551770">Marti et al 2016</a>) compared and contrasted the uses of each distance in a multidimensional setting where distributions exhibit dependencies. In this setting, the authors found that Wasserstein distance-based methods preserve geometric information in a more consistent manner than Fisher-Rao and other Kullback-Liebler-based methods. There are deep mathematical reasons for this; however the following example from their paper serves a succinct, intuitive example. Consider the following three 2D normal distributions. Each is a standard bivariate normal but with correlations of .5, .99. and .9999 respectively.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/Gauss5.jpg" title="Gaussian, 50% correlation" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gauss99.jpg" title="Gaussian, 99% correlation" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/Gauss9999.jpg" title="Gaussian, 99.99% correlation" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Bivariate Gaussian distributions with correlations of 50% (left), 99% (middle), and 99.99% (right).
+</div>
+
+Intuitively, by looking at these images, we can readily see that 99% and 99.99% correlation distributions should probably be closer distance-wise than 50% and 99%. Nonetheless, the authors find that Fisher-Rao and several other Kullback-Leibler-based distances all rank 99% correlation as closer to 50% than to 99.99%. Only the Wasserstein distance respects our intuition that 99% and 99.99% correlation bivariate Gaussians should be closer. This captured in the following table from their paper (Table 1, pg 4)
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/WassFItable.jpg" title="Table 1 on pg 4 from Marti et al 2016" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The table of distances between bivariate Gaussians A (50%), B (99%), and C (99.99%), showing only the Wassertein distance preserves D(A,B)>D(B,C) among metrics listed, for more see (<a href="https://doi.org/10.1109/SSP.2016.7551770">Marti et al 2016</a>) 
 </div>
 
 You can also put regular text between your rows of images.
