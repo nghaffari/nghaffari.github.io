@@ -9,14 +9,7 @@ category: work
 
 This writeup is based on a project I performed for a major national laboratory. I cannot get into the details, so instead, here I cover the methods and general scope of the project: combining input distributions from several experiments into a consensus model. This consensus model represents the combined understanding of all relevant experiments.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+# Averaging Probability Distributions
 
 To begin with we examine the difference between arithmetic or probability averaging and Wasserstein or quantile averaging. Probability distributions, just like numbers, vectors, matrices, and other quantitative objects, may be averaged together. However, distributions have more 'pieces' in their definition and construction than simple numbers and arrays, so averaging them is also more complicated.
 
@@ -33,6 +26,12 @@ Two primary methods for averaging probability distributions are probability aver
 <div class="caption">
     A probability (left) and quantile (right) average (red distribution) over two Gaussian distributions with different means (yellow bell curves).
 </div>
+We may prefer one or the other, depending on the application of interest. In a nutshell, probability averaging is useful when input probability distributions represent *different* portions of the same phenomenon, and quantile averaging makes the most sense when input probability distributions are modeling the *same* portion of the same phenomenon. In the image above, assume each Gaussian input is a distribution from a sensor measuring a feature, something like equipment temperature. The following two scenarios apply to probability and quantile averaging respectively.
+
+**Scenario 1**: Imagine one sensor is a daytime temperature sensor and the other a nighttime sensor. Then here we prefer the probability average, as each sensor is measuring a separate part of the full distribution, i.e. the full day-night distribution is truly bimodal, and each sensor catches one mode.
+
+**Scenario 2**: Imagine each sensor runs all day, and is on average unbiased, but there is some noise in the mean value of each distribution. In this case we prefer quantile averaging as each sensor is measuring the same phenomenon but has its own noise, i.e. the full distribution is truly unimodal.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
