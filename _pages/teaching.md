@@ -15,7 +15,7 @@ Organize your courses by years, topics, or universities, however you like!
 
 
 <!-- pages/teaching.md -->
-<div class="teaching">
+<div class="projects">
 {%- if site.enable_teaching_categories and page.display_categories %}
   <!-- Display categorized projects -->
   {%- for category in page.display_categories %}
