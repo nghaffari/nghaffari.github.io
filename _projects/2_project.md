@@ -81,7 +81,10 @@ In the setting of normal distributions, this task is straightforward: a simple f
 
 In our original experimental setting there were a few issues with implementing CMC. All experimental distributions were not necessarily Gaussian. In fact, each experiment collected data on different portion of the full distribution. The experimental distributions of interest were bivariate and exhibited various patterns of dependency. CMC does not preserve and integrate dependency in a meaningful way in all settings.
 
-Here Wasserstein-based combination methods were implemented and assessed for consensus modeling as a more robust method than CMC. Two Wasserstein-based algorithms were deployed for this consensus modeling problem: Wasserstein scalable posteriors (WASP) and fixed-point Wasserstein barycenters (FPW).
+Here Wasserstein-based combination methods were implemented and assessed for consensus modeling as a more robust method than CMC. Two Wasserstein-based algorithms were deployed for this consensus modeling problem: 
+
+* Wasserstein scalable posteriors (WASP) (<a href="https://proceedings.mlr.press/v38/srivastava15.html">Srivastava et al 2015</a>), (<a href="https://jmlr.org/papers/v19/17-084.html">Srivastava et al 2018</a>)
+* fixed-point Wasserstein barycenters (FPW) (<a href="https://www.sciencedirect.com/science/article/pii/S0022247X16300907">Álvarez-Esteban et al 2016</a>)
     
 The WASP method is a linear programming approach that approximates the full Wasserstein barycenter problem. A full Wasserstein barycenter requires restrictively massive computation for this type of problem. The WASP method offered a strong approximation that converges to the true Wasserstein barycenter as the limit of samples grows larger and larger. Its strength: it is highly flexible; different experiments can have virtually any distribution and still be combined in a meaningful way. 
 
