@@ -2,7 +2,7 @@
 layout: page
 title: Consensus Modeling
 description: Forming a consensus model from several inputs
-img: assets/img/3.jpg
+img: assets/img/WASP2d_T.jpg
 importance: 1
 category: work
 ---
