@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: Hiring in the Age of AI: Hope and Fear
+title: "Hiring in the Age of AI: Hope and Fear"
 description: An overview of the potential benefits and possible drawbacks to the increasing use of AI hiring
 giscus_comments: false
 date: 2023-05-20
