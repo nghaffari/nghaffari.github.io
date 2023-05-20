@@ -256,9 +256,9 @@ jekyll-archives:
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
 
-quant_tags: ['AI/ML', 'math', 'stats', 'math', 'code'] # this tags will be displayed on the front page of your blog
-health_tags: ['adaptogens', 'fitness', 'exercise science']
-other_tags: ['languages', 'history']
+quant_tags: ['AI/ML', 'math', 'stats', 'code'] # this tags will be displayed on the front page of your blog
+health_tags: ['adaptogens', 'exercise science', 'microbiome']
+other_tags: ['languages', 'history', 'business']
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
