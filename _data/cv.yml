@@ -52,8 +52,23 @@
       institution: Nulixir, Inc.
       year: Jan 2021 - present
       description:
-        - Conducted background research and developed reporting covering business intelligence, marketing, and clinical scientific data for nutraceuticals
-        - Description 2.
+        - Conducted background research and analysis covering business intelligence, product formulation, and marketing, and clinical scientific data for nutraceuticals
+        - title: Business intelligence activities involved
+          contents:
+            - Researching macroeconomic conditions, particularly conditions affecting the nutraceutical industry
+            - Investigating competitor business strategies, technologies, products, and product claims
+            - Writing technical reports summarizing competitor technology
+        - title: Product formulation research involved
+          contents:
+            - Researching evidence for the clinical effects of key active ingredients
+            - Reporting potential adverse effects, allergenicity, and toxicity
+            - Finding potential product formulation difficulties (e.g., instability, poor taste, etc.)
+        - title: Marketing-related activities involved
+          contents:
+            - Analyzing Google search and social media data to determine nutraceutical opinion trends
+            - Scraping industry data to understand trends in nutraceutical sales
+            - Converting scientific data and evidence in simple marketing statements
+        - Subject matter expert in statistics and data science assisting several projects and business functions
         - title: Developed a rudimentary database for research and formulation purposes
           contents:
             - Database was developed and implemented in MySQL
@@ -62,7 +77,7 @@
           contents:
             - Developed wrapper functions for easy access to PubChem’s PUG REST API via pubchempy
             - Designed functions for accessing JSON data from Pubchem’s PUG_VIEW API
-            - Implemented functions for downloaded and viewing spectroscopy output images for calibrating lab equipment
+            - Implemented functions for downloading and viewing spectroscopy output images for calibrating lab equipment
         - title: Supported internal clinical trials with several data functions
           contents:
             - Provided experimental design methodology expertise for organizing clinical trial plans
@@ -86,6 +101,8 @@
             - ZF CVS
             - Vedanta Aluminium
             - NITK
+        - title: Worked on several data science and analytics projects for clients
+            - Warranty cost analysis and predictive modeling for ZF CVS
         - Participated in business development strategy and planning, designing core operational tactics for future business directions
     - title: Adjunct Faculty
       institution: Southern Methodist University
@@ -166,7 +183,7 @@
           - Implemented a ‘distance-dependent Chinese restaurant process’ for learning product defect patterns
           - Used Bayesian hyperparameter estimation for tailoring algorithm performance
           - Employed a Gaussian mixture model to model defect patterns on wafer within each identified cluster
-        - Solution mitigated the need for engineer labor in identifying product defects, saving 100+ hours per product line
+          - Solution mitigated the need for engineer labor in identifying product defects, saving 100+ hours per product line
 
 - title: Publications
   type: list
@@ -203,6 +220,6 @@
   type: list
   contents:
     - <u>Health:</u> adaptogens, exercise science, etc.
-    - <u>History:</u> 
+    - <u>History:</u>  ancient civilizations, etc.
     - <u>Language:</u> etymology, linguistics, etc.
-    - <u>Nature:</u> 
+    - <u>Nature:</u> horticulture, weather, etc.
