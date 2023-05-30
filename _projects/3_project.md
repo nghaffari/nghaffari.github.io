@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Product Defect Classification: The Chinese Restaurant Process and the Indian Buffet
-description: Using latent clustering to group product defects
+title: Product Defect Classification
+description: Categorizing product defect patterns using the Chinese restaurant process and the Indian buffet process
 img: assets/img/7.jpg
 importance: 1
 category: work
