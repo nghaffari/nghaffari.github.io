@@ -33,7 +33,7 @@ We may prefer one or the other, depending on the application of interest. In a n
 
 **Scenario 2**: Imagine each sensor runs all day, and is on average unbiased, but there is some noise in the mean value of each distribution. In this case we prefer quantile averaging as each sensor is measuring the same phenomenon but has its own noise, i.e. the full distribution is truly unimodal.
 
-To read a bit more about probability vs quantile averaging, see the following paper (<a href="https://doi.org/10.1002/2014WR016163">Schepen & Wang, 2015).
+To read a bit more about probability vs quantile averaging, see the following paper (<a href="https://doi.org/10.1002/2014WR016163">Schepen & Wang, 2015</a>).
 
 # From Probability Distances to Probability Averaging
 
