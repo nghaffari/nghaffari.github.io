@@ -1,24 +1,29 @@
 ---
 layout: page
-title: project 3
-description: a project that redirects to another website
+title: Product Defect Classification: The Chinese Restaurant Process and the Indian Buffet
+description: Using latent clustering to group product defects
 img: assets/img/7.jpg
 importance: 1
 category: work
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+This overview covers a research project I completed for a major semiconductor manufacturer. The company has since merged with another major manufacturer. At the time, the firm had multibillion dollar semiconductor sales and specialized in integrated circuits. Integrated circuits are silicon wafers with embedded transistors and other electronic components. This is in contrast to discrete circuits where separate electronic components are connected together. While discrete circuits allow for more customization, integrated circuits enjoy several advantages: mass-production, cost-efficacy, lower power consumption. 
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+# Business Context
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The motto of the real estate industry is "location, location, location," emphasizing how important location is to present and future property values. In the semiconductor industry the saying is, "faster, smaller, cheaper." Gordon Moore was an engineer and entrepeneur who founded his own semiconductor company.  In 1975 he observed that the transistor count on integrated circuits was doubling roughly every two years. He projected this trend to continue for the next decade, and indeed it has persisted until very recently; so this phenomenon has been named Moore's law. This process of doubling the transistor count on integrated circuits has largely been driven by miniaturization of components. As of recently this process is approaching its limits, and there has been increasing emphasis on 3D stacking of transistors to continue processing power gains. 
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/MooreDouble.png" title="Moore's law: doubling transistor counts 1970-2020" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/MooreMiniature.png" title="Moore's law: component miniaturization 1970-2017" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Moore's law visualized through the doubling of transistor (left) and the component miniaturization (right).
+</div>
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
