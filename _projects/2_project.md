@@ -3,7 +3,7 @@ layout: page
 title: Consensus Modeling
 description: Forming a consensus model from experimental outcomes for a major national lab
 img: assets/img/WASP2d_T.jpg
-importance: 1
+importance: 2
 category: work
 ---
 
