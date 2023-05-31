@@ -102,6 +102,7 @@
             - Vedanta Aluminium
             - NITK
         - title: Worked on several data science and analytics projects for clients
+          contents:
             - Warranty cost analysis and predictive modeling for ZF CVS
         - Participated in business development strategy and planning, designing core operational tactics for future business directions
     - title: Adjunct Faculty
@@ -196,25 +197,26 @@
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 1921
+    - year: 2007
       items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
+        - National Merit Special Scholarship (Corporate Sponsor Unilever) 
+        - Walter B. Smith Jr. Undergraduate Scholarship
+        - University Honors (9 semesters)
+    - year: 2010
       items: 
-        - Max Planck Medal
+        - Eva Stevenson Woods Endowed Presidential Scholarship
 
-- title: Academic Interests
+- title: Data Interests
   type: nested_list
   contents:
-    - title: Topic 1.
+    - title: Optimal Transportation
       items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+        - Wasserstein spaces
+        - Barycenters
+    - title: Heavy-tailed Noise
       items:
-        - Description 1.
-        - Description 2.
+        - Levy-stable distribution
+        - Levy-jump processes
 
 - title: Other Interests
   type: list
