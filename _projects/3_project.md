@@ -36,7 +36,7 @@ The motto of the real estate industry is "location, location, location," emphasi
 
 As one <a href="https://www.chinawaterrisk.org/resources/analysis-reviews/8-things-you-should-know-about-water-and-semiconductors/">site</a> points out, semiconductor fabrication requires a tremendous amount of water. Fabrication of a 30cm wafer requires up to 2200 gallons of water; a large fabrication facility may easily consume 4.8 million gallons per day. This is average annual water consumption of a city of 60000! And not just any water. Minute contaminants in the water can create impurities and defects in integrated circuits. Therefore water is passed through reverse osmosis several times to produce "ultra pure water." Ultra pure water is considered an industrial solvent, and it is unsafe to drink. It is so pure, its consumption leeches vital minerals from the body and will eventually kill the consumer. It takes 1400-1600 gallons of municipal water to create 1000 gallons of ultra pure water.
 
-In addition to water, other fabrication makes intensive use of other resources. A large manufacturing facility can use 30-50 megawatts during peak production; this is enough to power a small city. Fabrication facilities need to have pressurized chambers, fans, and well-designed air flow patterns to reduce impurities introduced via the air. As part of my work on this project, I was given a tour of a fabrication facility. The tour required wearing the appropriate protective gear to prevent contamination of the manufacturing process. Additionally, the lights in the fabrication rooms were yellow; apparently this spectrum of light is least likely to interact with wafers and components. The intensity of semiconductor manufacturer and the demands of the highly competitive semiconductor market mean production costs must be optimized for a firm to be viable.
+In addition to water, fabrication makes intensive use of other resources. A large manufacturing facility can use 30-50 megawatts during peak production; this is enough to power a small city. Fabrication facilities need to have pressurized chambers, fans, and well-designed air flow patterns to reduce impurities introduced via the air. As part of my work on this project, I was given a tour of a fabrication facility. The tour required wearing the appropriate protective gear to prevent contamination of the manufacturing process. Additionally, the lights in the fabrication rooms were yellow; apparently this spectrum of light is least likely to interact with wafers and components. The intensity of semiconductor manufacturing and the demands of the highly competitive semiconductor market mean production costs must be optimized for a firm to be viable.
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/yellowfab.png" title="fabrication under yellow light" class="img-fluid rounded z-depth-1" %}
@@ -46,20 +46,10 @@ As a result of these demands and constraints, rigorous production processes are 
 
 At best an engineer tends to classify one image per minute. There may be thousands of defective products on a product line, and so the defect classification process can take up to two weeks of an engineer’s time for a single product line. An automated approach, has the potential to mitigate this. Ideally, if this can be done with minimal time investment by engineers, it frees up labor for finding solutions to product issues. This frees an engineer to focus on finding sources of product defects and investigating manufacturing process improvements.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
+# Data Set, Similarity Measures, & Data Processing 
+
+A wafer probe is a testing machine for integrated circuits. The machine's probe tests each die of a wafer for functionality and electrical conductivity. The wafer is systematically moved under the probe so that once a die has been tested the adjacent die is tested next. The 'pass' or 'fail' status of each die and die location are stored in a file called a wafer map. This wafer map is a digital representation of the testing results which can then be analyzed. For the purposes of this project, the corporate team shared data samples from a couple product lines (in order to protect privacy). For illustration wafer maps are visualized below with data from a simulation. 
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/defectiveWafers.png" title="simulated wafer defect patterns" class="img-fluid rounded z-depth-1" %}
@@ -69,38 +59,43 @@ At best an engineer tends to classify one image per minute. There may be thousan
     A sample of defective wafers. Note data was simulated to protect the details of the original data set.
 </div>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+To initiate the analysis, we need a mechanism to convert the data representating die passes and fails on each wafer into information about how 'similar' each pair of wafers are to eachother. Here the idea of a *similarity measure* is helpful. In technical terms, a similarity measure is function on a set of objects that returns a number signifying how close those objects are. There is no single form for a similarity measure, though they tend to be the inverse, in some sense of the word, of a distance metric.
 
+As an example take distance (our regular idea of distance, what is called Euclidean distance in math). Distance tells us how far apart two points or two objects at those points are. The negative of the distance can be thought of a similarity index. Close (i.e. similar) objects have a high similarity score (a small negative value in this case) and distant (i.e. dissimilar) objects have a low similarity score (highly negative). Inverse distances like this work great for continuous data. But our data consisted of 'pass'/'fail' readings, which are typically converted into binary data - ones and zeros. Hence this project required a binary similarity. A binary similarity is used for observations whose data consists of binary categories - ones and zeros.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+There are four basic quantities used in constructing binary similarity measures. These quantities arise from the four possible combinations of ones and zeros. Assume we have two observations labeled $x$ and $y$. For each observation we have a set of variables represented by numbers. So $x_1$ is the first variable and $x_2$ the second for observation $x$. For instance, if $x$ is a person $x_1=1$ might signify that the person is female and $x_2=1$ may indicate that the person is Rh-positive blood type. Then the four quantities, labeled $a$, $b$, $c$, and $d$ between two observations $x$ and $y$ are:
 
+* **$a$**: # of $i$ where $x_i=1$ and $y_i=1$
+* **$b$**: # of $i$ where $x_i=1$ and $y_i=0$
+* **$c$**: # of $i$ where $x_i=0$ and $y_i=1$
+* **$d$**: # of $i$ where $x_i=0$ and $y_i=0$
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+Using these quantities there are many ways to build similarities. The simplest is the total percentage of matches: $\frac{a+d}{a+b+c+d}$. For a comprehensive list of binary similarities see the following studies and references therein:
+
+* (<a href="https://www.semanticscholar.org/paper/A-Survey-of-Binary-Similarity-and-Distance-Measures-Choi-Cha/b0d4dadbb6284373b504ef7aa0b74a571e222bc9">Choi et al 2010</a>)
+* (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1392-z">Wijaya et al 2016</a>)
+* (<a href="https://doi.org/10.1371/journal.pone.0247751">Brusco et al 2021</a>)
+
+For the purposes of our study we chose the following similarity formula: $\frac{a+d}{a+b+c}$. To intuitively understand why, note that $b$ and $c$ only contribute to denominator. So if all categorical variables are mismatched between $x$ and $y$, everything will fall under $b$ or $c$ and the similarity will be $0$. $a$ represents a positive match. So if $x$ and $y$ were all ones, we would have a similarity of $1$. Now if $x$ and $y$ were all zeroes, i.e. we have all negative matches, we only have $d$. In this case the similarity approaches infinity. In practice we would replace infinity with some very large number. This similarity measure is valuing negative matches moreso then positive ones (pun unintended!). In our context a negative match is a match on failing die. As our primary interest is classifying defect patterns, it makes sense to value negative matches the most. Positive matches still count for something over mismatches.
+
+While the sample sizes shared with our team were small, on the order of hundreds of observations, actual product lines could be one the order of hundreds of thousands of wafers or more. So to increase computational efficiency we applied a spectral dimensionality reduction preprocessing step.
 
 {% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
+```r
+Spectra = function(S,t){
+  eig = eigen(S,symmetric=TRUE)
+  eigvalues = eig$values
+  eigvectors = eig$vectors
+  
+  m = length(eigvalues[abs(eigvalues)>t])
+  
+  U = eigvectors[,1:m]
+  
+  for (i in 1:length(U[,1])){
+    U[i,]=sqrt((U[i,]^2)/sum(U[i,]^2))
+  }
+  
+  return(list(eigvalues,eigvectors,U))
+}
 ```
 {% endraw %}
