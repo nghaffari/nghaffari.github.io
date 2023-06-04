@@ -63,22 +63,22 @@ To initiate the analysis, we need a mechanism to convert the data representating
 
 As an example take distance (our regular idea of distance, what is called Euclidean distance in math). Distance tells us how far apart two points or two objects at those points are. The negative of the distance can be thought of a similarity index. Close (i.e. similar) objects have a high similarity score (a small negative value in this case) and distant (i.e. dissimilar) objects have a low similarity score (highly negative). Inverse distances like this work great for continuous data. But our data consisted of 'pass'/'fail' readings, which are typically converted into binary data - ones and zeros. Hence this project required a binary similarity. A binary similarity is used for observations whose data consists of binary categories - ones and zeros.
 
-There are four basic quantities used in constructing binary similarity measures. These quantities arise from the four possible combinations of ones and zeros. Assume we have two observations labeled $$x$$ and $$y$$. For each observation we have a set of variables $$x_i$$ represented by numbers $$i$$. So <img src="https://latex.codecogs.com/gif.latex?x_1 " /> is the first variable and <img src="https://latex.codecogs.com/gif.latex?x_2 " /> the second for observation <img src="https://latex.codecogs.com/gif.latex?x " />. For instance, if <img src="https://latex.codecogs.com/gif.latex?x " /> is a person <img src="https://latex.codecogs.com/gif.latex?x_1=1 " /> might signify that the person is female and <img src="https://latex.codecogs.com/gif.latex?x_2=1 " /> may indicate that the person is Rh-positive blood type. Then the four quantities, labeled <img src="https://latex.codecogs.com/gif.latex?a " />, <img src="https://latex.codecogs.com/gif.latex?b " />, <img src="https://latex.codecogs.com/gif.latex?c " />, and <img src="https://latex.codecogs.com/gif.latex?d " /> between two observations <img src="https://latex.codecogs.com/gif.latex?x " /> and <img src="https://latex.codecogs.com/gif.latex?y " /> are:
+There are four basic quantities used in constructing binary similarity measures. These quantities arise from the four possible combinations of ones and zeros. Assume we have two observations labeled $$x$$ and $$y$$. For each observation we have a set of variables $$x_i$$ represented by numbers $$i$$. So $$x_1$$ is the first variable and $$x_2$$ the second for observation $$x_1=1$$ might signify that the person is female and $$x_2=1$$ may indicate that the person is Rh-positive blood type. Then the four quantities, labeled $$a$$, $$b$$, $$c$$, and $$d$$ between two observations $$x$$ and $$y$$$ are:
 
-* **$a$**: # of $i$ where $x_i=1$ and $y_i=1$
-* **$b$**: # of $i$ where $x_i=1$ and $y_i=0$
-* **$c$**: # of $i$ where $x_i=0$ and $y_i=1$
-* **$d$**: # of $i$ where $x_i=0$ and $y_i=0$
+* **$$a$$**: # of $$i$$ where $$x_i=1$$ and $$y_i=1$$
+* **$$b$$**: # of $$i$$ where $$x_i=1$$ and $$y_i=0$$
+* **$$c$$**: # of $$i$$ where $$x_i=0$$ and $$y_i=1$$
+* **$$d$$**: # of $$i$$ where $$x_i=0$$ and $$y_i=0$$
 
-Using these quantities there are many ways to build similarities. The simplest is the total percentage of matches: $\frac{a+d}{a+b+c+d}$. For a comprehensive list of binary similarities see the following studies and references therein:
+Using these quantities there are many ways to build similarities. The simplest is the total percentage of matches: $$\frac{a+d}{a+b+c+d}$$. For a comprehensive list of binary similarities see the following studies and references therein:
 
 * (<a href="https://www.semanticscholar.org/paper/A-Survey-of-Binary-Similarity-and-Distance-Measures-Choi-Cha/b0d4dadbb6284373b504ef7aa0b74a571e222bc9">Choi et al 2010</a>)
 * (<a href="https://bmcbioinformatics.biomedcentral.com/articles/10.1186/s12859-016-1392-z">Wijaya et al 2016</a>)
 * (<a href="https://doi.org/10.1371/journal.pone.0247751">Brusco et al 2021</a>)
 
-For the purposes of our study we chose the following similarity formula: $\frac{a+d}{a+b+c}$. To intuitively understand why, note that $b$ and $c$ only contribute to denominator. So if all categorical variables are mismatched between $x$ and $y$, everything will fall under $b$ or $c$ and the similarity will be $0$. $a$ represents a positive match. So if $x$ and $y$ were all ones, we would have a similarity of $1$. Now if $x$ and $y$ were all zeroes, i.e. we have all negative matches, we only have $d$. In this case the similarity approaches infinity. In practice we would replace infinity with some very large number. This similarity measure is valuing negative matches moreso then positive ones (pun unintended!). In our context a negative match is a match on failing die. As our primary interest is classifying defect patterns, it makes sense to value negative matches the most. Positive matches still count for something over mismatches.
+For the purposes of our study we chose the following similarity formula: $$S=\frac{a+d}{a+b+c}$$. To intuitively understand why, note that $$b$$ and $$c$$ only contribute to denominator. So if all categorical variables are mismatched between $$x$$ and $$y$$, everything will fall under $$b$$$ or $$c$$ and the similarity will be $$0$$. $$a$$ represents a positive match. So if $$x$$ and $$y$$ were all ones, we would have a similarity of $$1$$. Now if $$x$$ and $$y$$ were all zeroes, i.e. we have all negative matches, we only have $d$. In this case the similarity approaches infinity. In practice we would replace infinity with some very large number. This similarity measure is valuing negative matches moreso then positive ones (pun unintended!). In our context a negative match is a match on failing die. As our primary interest is classifying defect patterns, it makes sense to value negative matches the most. Positive matches still count for something over mismatches.
 
-While the sample sizes shared with our team were small, on the order of hundreds of observations, actual product lines could be on the order of hundreds of thousands of wafers or more. So to increase computational efficiency we applied a spectral dimensionality reduction preprocessing step.
+While the sample sizes shared with our team were small, on the order of hundreds of observations, actual product lines could be on the order of hundreds of thousands of wafers or more. So to increase computational efficiency we applied a spectral dimensionality reduction preprocessing step. As long as the similarity measured used is symmetric, the matrix of similarities between wafers will be symmetric, meaning it can be diagonalized and eigenvalues can be obtained. Eigenvalues contain fundamental information about how a matrix is structured and how it functions as a linear operator. By selecting the largest eigenvalues and their associated eigenvectors, a lower dimensional representation of the matrix can be found. The basic code below in R takes an $$n\times{}n$$ matrix and converts it into a $$\times{}m$$ dimensional matrix with normalization rows.
 
 {% raw %}
 ```r
@@ -99,3 +99,43 @@ Spectra = function(S,t){
 }
 ```
 {% endraw %}
+
+For a deeper dive into spectral dimensionality reduction, see (<a href="https://doi.org/10.1162/089976603321780317">Belkin & Niyogi, 2003</a>). From here we were ready to apply a clustering mechanism to identify clusters of wafers based on defect patterns.
+
+# Chinese Restaurants and Indian Buffets
+
+The machine learning community typically divides clustering problems into two categories: supervised and unsupervised. In supervised clustering problems, training data has the correct classifications, so we can test a model's predictions against observed classifications for accuracy. In unsupervised clustering problems the "correct" clusters are not known beforehand, and there may well be no correct answer. Rather we often would like to cluster observations in the most meaningful way. This problem was unsupervised. Furthermore, we do not know how many clusters (i.e. how many product defect patterns) we are looking for beforehand. So this is a latent clustering problem. We need (to get the algorithm) to figure out how many clusters for defect patterns we have and match observations to their most likely cluster.
+
+The *Chinese restaurant process* refers to a nonparametric Bayesian technique for latent clsutering. The dynamics of the allocation model are said to mimic the pattern of seating at a Chinese restaurant. In this analogy each new observation is assigned to an existing cluster or creates a new cluster, with each possibility having a certain probability. The probability of sitting with any existing cluster is proportional to the number of observations already present in the cluster. A parameter of the model determine the remaining probability of sitting at a new cluster. The Chinese restaurant process analogy was first introduced in the following conference paper: (<a href="https://doi.org/10.1007%2FBFb0099421">Aldous 1985</a>).
+
+The Chinese restaurant process is fine in settings where observations are equally likely to sit together (i.e. cluster together). But in this setting, we want to cluster wafers by defect patterns. Wafers with "closer" patterns should ideally have a higher chance of clustering together. Here a *distance dependent Chinese restaurant process* adds the necessary flexibility of incorporating a distance measure (or in our case a similarity measure) between observations. Observations that are closer will be more likely to sit in the same cluster. The method of the distance dependent Chinese restaurant process was first introduced in (<a href="https://www.jmlr.org/papers/v12/blei11a.html">Blei & Frazier, 2011</a>). The model comes with a set of hyperparameters that need to be set. This was automated using a hyperparameter method introduced in (<a href="https://stat.duke.edu/~mw/.downloads/DP.learnalpha.pdf">West 1992</a>).
+
+On the data given a total of 5 clusters were identified (and defect patterns subsequently modeled using a Gaussian mixture model). While the company data used for this project is private. The following is the result of simulation test used to validate the method. Wafers conforming to one of four obviously different defect patterns were simulated. All featured heavily defective die in a single quadrant of the wafer. A total of 6 observations were generated in the first category, 2 in the second and third, and 4 in the fourth.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/waf1.png" title="simulated wafer defect pattern" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/waf2.png" title="simulated wafer defect pattern" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/waf3.png" title="simulated wafer defect pattern" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/waf4.png" title="simulated wafer defect pattern" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Simulated wafers from one of four highly distanct defect patterns.
+</div>
+
+The algorithm correctly identified 4 clusters and correctly classified each simulated wafer in its respective category. The output below was observed:
+
+{% raw %}
+```r
+Output: [1] 3 3 3 3 3 3 1 1 4 4 2 2 2 2
+```
+{% endraw %}
+
+The distance dependent Chinese restaurant offered a framework for LCA which worked well on the given data set. However, during the course of the project research, the parallel idea of latent feature analysis. While wafers with distinct patterns can be easily classified into distinct clusters, what if some wafers overlap on some defect patterns but differ on others? Instead of thinking of wafers as falling into clusters of defect patterns, we can think of wafers as having a set of features, in this case defect patterns. Wafers may overlap on some features and differ on others. This provides a more flexible framework as wafers may share some defect features and differ on others. A similar restaurant analogy exists for this latent feature modeling: the *Indian buffet process*. In this analogy customers (observations) may share some features (e.g. both get chicken vindaloo) but differ on others (e.g. one gets a vegetable samosa, one a lamb korma). The Indian buffet process was first explicated in (<a href="http://learning.eng.cam.ac.uk/zoubin/papers/ibptr.pdf">Griffiths & Ghahramani, 2005</a>), and a distance dependent Indian buffet process was introduced in (<a href="https://ieeexplore.ieee.org/document/6809186">Gershman, Frazier, Blei, 2014</a>).
