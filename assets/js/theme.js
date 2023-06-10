@@ -2,9 +2,9 @@
 
 let toggleTheme = (theme) => {
   if (theme == "dark") {
-    setTheme("light");
-  } else {
     setTheme("dark");
+  } else {
+    setTheme("light");
   }
 }
 
