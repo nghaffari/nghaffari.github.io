@@ -144,10 +144,6 @@
         - Assisted in research extending ‘network meta-analysis’ methods to scenarios with instrumental variables and missing data
         - title: Research involved simulation as well as exploratory implementations with the following
           contents:
-            - Database was developed and implemented in MySQL
-            - Data schema design was implemented using sqlalchemy in Python
-        - title: Developed API access tools in Python to assistant lab scientists with research
-          contents:
             - JAGS
             - OpenBUGS
             - Stan
