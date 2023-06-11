@@ -5,13 +5,11 @@ title: teaching
 description: Instructional materials
 nav: true
 nav_order: 5
-display_categories: [quant, personal]
+display_categories: [quant, health]
 horizontal: false
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
-
-Organize your courses by years, topics, or universities, however you like!
+A collection of instructional material on different topics. Primary focus is on data science and statistics materials up top. Other material can be found below.
 
 
 <!-- pages/teaching.md -->
