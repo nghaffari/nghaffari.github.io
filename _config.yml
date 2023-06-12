@@ -256,7 +256,7 @@ jekyll-archives:
     category: '/blog/category/:name/'
 
 quant_tags: ['AI/ML', 'math', 'stats', 'code'] # this tags will be displayed on the front page of your blog
-health_tags: ['adaptogens', 'exercise science', 'microbiome']
+health_tags: ['adaptogens', 'exercise', 'microbiome']
 other_tags: ['languages', 'history', 'business']
 
 # -----------------------------------------------------------------------------
