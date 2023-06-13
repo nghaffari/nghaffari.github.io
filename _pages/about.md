@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: "There is no shame in inquiry, only shame in being ignorant (پرسیدن عیب نیست ندانستن عیب است)"
+subtitle: "\"There is no shame in inquiry, only shame in being ignorant\" (پرسیدن عیب نیست ندانستن عیب است)"
 
 profile:
   align: right
