@@ -55,9 +55,9 @@ The next one comes from Sa’di of Shiraz (1210-1292). He was from the city of S
 
 > Do you know what Zal told Rostam the hero of repute?
 >
->“Never regard your beaten foe as ‘down-and-out’ to boot
+>“Never regard your beaten foe as ‘down-and-out’ to boot,
 >
->Many we saw drinking form the stream in triumph
+>Many we saw drinking form the stream in triumph,
 >
 >As more camels came from behind, stealing all of the loot!”
 
@@ -74,7 +74,7 @@ The next one comes from the poet Jalaladdin Balkhi (1207-1273). He is famous in 
 >عاشقا واجو که معشوق تو کیست
 >
 
->That on the face of it that made you into a lover
+>That on the face of it that made you into a lover,
 >
 >Once the life has departed then why do you feel other?
 >
