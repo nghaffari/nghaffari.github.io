@@ -1,6 +1,6 @@
 ---
 layout: distill
-title: "Some Musing on Persian Poetry"
+title: "Some Musings on Persian Poetry"
 description: Some translations and thoughts on four poetic excerpts from four of the giants of Persian poetry
 tags: languages, history
 giscus_comments: false
