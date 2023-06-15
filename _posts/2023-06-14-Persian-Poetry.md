@@ -57,7 +57,7 @@ The next one comes from Sa’di of Shiraz (1210-1292). He was from the city of S
 >
 >“Never regard your beaten foe as ‘down-and-out’ to boot,
 >
->Many we saw drinking form the stream in triumph,
+>Many we saw drinking from the stream in triumph,
 >
 >As more camels came from behind, stealing all of the loot!”
 
