@@ -98,7 +98,7 @@ The last poem comes to us from Hafez of Shiraz (1325-1390). He was the last of t
 >
 >Begging of strangers for what it already had,
 >
->How my heart pled with lost souls scatted on the shore,
+>How my heart pled with lost souls scattered on the shore,
 >
 >While there on the beach lay life’s hidden pearl unclad!
 
