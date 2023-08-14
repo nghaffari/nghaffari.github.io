@@ -1,3 +1,4 @@
+---
 layout: distill
 title: "Unpredictable Trends"
 description: A survey of current chaotic trends and a discussion on managing unpredictability
@@ -36,3 +37,5 @@ From July 2010 to July 2020, the total disabled population increased from about 
 <div class="embed-container">
   <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=17QX9&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
 </div>
+
+<script src="https://fred.stlouisfed.org/graph/js/embed.js" type="text/javascript"></script>
