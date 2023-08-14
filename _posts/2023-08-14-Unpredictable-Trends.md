@@ -15,6 +15,7 @@ bibliography: 2023-Trends.bib
 toc:
   - name: Chaotic Signals
   - name: The World's Gone Mad
+    - name: Labor Markets
   - name: Unpredictable, NOT Unmanageable
 ---
 
