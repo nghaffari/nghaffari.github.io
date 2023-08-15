@@ -230,6 +230,51 @@
 
 <h2 id="unpredictable-not-unmanageable">Unpredictable NOT Unmanageable</h2>
 
+<p>Volatile patterns make prediction difficult. This does not necessarily mean that nothing can be done. It simply requires a more sophisticated organizational structure and expanded data sources. Here several tools and tactics with volatile and shifting data patterns are mentioned. The discussion is high level and general; to learn more do some reading on each of these topics.</p>
+
+<p>To deal with shifting patterns in data, we must identify shifting patterns in data. This is the idea of change point detection. It is closely related to outlier or anomaly detection. Both methods seek to detect large deviations from an established pattern. Outlier detection seeks to identify individual points that deviate beyond some threshold, whereas change point detection seeks to identify a wholesale shift in the underlying pattern. Hence change point detection is looking for a sustained departure from normal.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/AAGauss-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/AAGauss-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/AAGauss-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/AAGauss.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="arithmetic average of two Gaussians" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/WAGauss-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/WAGauss-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/WAGauss-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/WAGauss.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Wasserstein average of two Gaussian" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+</div>
+<div class="caption">
+    A probability (left) and quantile (right) average (red distribution) over two Gaussian distributions with different means (yellow bell curves).
+</div>
 
       </d-article>
 
