@@ -52,3 +52,18 @@ Labor productivity declines continued in Q1 of 2023 with 1.2% decline. In a posi
 
 ## Unpredictable NOT Unmanageable
 
+Volatile patterns make prediction difficult. This does not necessarily mean that nothing can be done. It simply requires a more sophisticated organizational structure and expanded data sources. Here several tools and tactics with volatile and shifting data patterns are mentioned. The discussion is high level and general; to learn more do some reading on each of these topics.
+
+To deal with shifting patterns in data, we must identify shifting patterns in data. This is the idea of change point detection. It is closely related to outlier or anomaly detection. Both methods seek to detect large deviations from an established pattern. Outlier detection seeks to identify individual points that deviate beyond some threshold, whereas change point detection seeks to identify a wholesale shift in the underlying pattern. Hence change point detection is looking for a sustained departure from normal.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/AAGauss.jpg" title="arithmetic average of two Gaussians" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/WAGauss.jpg" title="Wasserstein average of two Gaussian" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    A probability (left) and quantile (right) average (red distribution) over two Gaussian distributions with different means (yellow bell curves).
+</div>
