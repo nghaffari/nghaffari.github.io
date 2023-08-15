@@ -11,6 +11,12 @@ This writeup covers a project for a major, global commercial vehicle manufacture
 
 Here the aim is to distill major takeaways from two important steps in this project: data collection/preparation and predictive modeling of cumulative failures.
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/car_line.png" title="car assembly line" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
 # Data Collection & Preparation
 
 In many data science projects, data collection and preparation are the most time-consuming steps. This project was no exception. Among the challenges encountered during this phase:
