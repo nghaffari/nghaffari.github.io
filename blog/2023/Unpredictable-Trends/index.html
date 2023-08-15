@@ -240,13 +240,13 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/AAGauss-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/AAGauss-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/AAGauss-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/mean_shift-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/mean_shift-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/mean_shift-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/AAGauss.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="arithmetic average of two Gaussians" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/mean_shift.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="mean change point" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -258,13 +258,31 @@
 
   <picture>
     
-    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/WAGauss-480.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/WAGauss-800.webp"></source>
-    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/WAGauss-1400.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/var_shift-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/var_shift-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/var_shift-1400.webp"></source>
     
 
     <!-- Fallback to the original file -->
-    <img src="/assets/img/WAGauss.jpg" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="Wasserstein average of two Gaussian" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+    <img src="/assets/img/var_shift.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="variance change point" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+
+  </picture>
+
+</figure>
+
+    </div>
+  <div class="col-sm mt-3 mt-md-0">
+        <figure>
+
+  <picture>
+    
+    <source class="responsive-img-srcset" media="(max-width: 480px)" srcset="/assets/img/trend_shift-480.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 800px)" srcset="/assets/img/trend_shift-800.webp"></source>
+    <source class="responsive-img-srcset" media="(max-width: 1400px)" srcset="/assets/img/trend_shift-1400.webp"></source>
+    
+
+    <!-- Fallback to the original file -->
+    <img src="/assets/img/trend_shift.png" class="img-fluid rounded z-depth-1" width="auto" height="auto" title="trend change point" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
 
   </picture>
 
@@ -273,7 +291,7 @@
     </div>
 </div>
 <div class="caption">
-    A probability (left) and quantile (right) average (red distribution) over two Gaussian distributions with different means (yellow bell curves).
+    Three examples of change point detection: mean shift, variance shift, and trend line shift/
 </div>
 
       </d-article>
