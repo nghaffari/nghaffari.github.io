@@ -58,12 +58,15 @@ To deal with shifting patterns in data, we must identify shifting patterns in da
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/AAGauss.jpg" title="arithmetic average of two Gaussians" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/mean_shift.png" title="mean change point" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/WAGauss.jpg" title="Wasserstein average of two Gaussian" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/var_shift.png" title="variance change point" class="img-fluid rounded z-depth-1" %}
+    </div>
+  <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/trend_shift.png" title="trend change point" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    A probability (left) and quantile (right) average (red distribution) over two Gaussian distributions with different means (yellow bell curves).
+    Three examples of change point detection: mean shift, variance shift, and trend line shift/
 </div>
