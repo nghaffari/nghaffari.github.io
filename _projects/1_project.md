@@ -2,18 +2,12 @@
 layout: page
 title: Warranty Cost Analysis 
 description: Statistical analysis and predictive modeling of warranty claims for a major global automotive parts manufacturer
-img: assets/img/12.jpg
+img: assets/img/car_line.jpg
 importance: 3
 category: work
 ---
 
 This writeup covers a project for a major, global commercial vehicle manufacturer analyzing parts failures and warranty claims. The firm wanted to analyze its warranty claim data to identify current failure patterns, predict future failure patterns, and support corrective business policies. The project involved substantial elements of data collection, data cleaning and preparation, exploratory data analysis, data visualization, and predictive modeling. The end results included: (1) clarity on the sources and nature of data that the firm had available as well as an understanding of what further data are necessary for future business analytics development (2) versatile data visualization tools, including an interactive dashboard, for understanding warranty claim patterns and (3) predictive modeling frameworks for understanding and forecasting key metrics such as raw batch failure rates and cumulative failure percentages.
-
-<div class="float: right;">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/car_line.png" title="car assembly line" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
 
 Here the aim is to distill major takeaways from two important steps in this project: data collection/preparation and predictive modeling of cumulative failures.
 
