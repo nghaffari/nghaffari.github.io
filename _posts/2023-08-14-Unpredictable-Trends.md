@@ -40,6 +40,7 @@ From July 2010 to July 2020, the total disabled population increased from about 
   <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=17QX9&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
 </div>
 
+<script src="https://fred.stlouisfed.org/graph/js/embed.js" type="text/javascript"></script>
 
 The causes of this sudden rise in the disabled population are contested. Some theories tie the increased disabling to long covid. While some studies have shown most long covid symptoms abate within a year, others contend that certain effects, such as chronic fatigue, may persist<d-cite key="bonuck2023"></d-cite>. Others think environmental toxins, the legacy of pandemic era policies (e.g. reduced general medical visits), climate change, and host of other factors many driving the increased disabling. Still others think changes in reporting standards may be contributing. In all likelihood, there is a convergence of different factors driving an increase of this magnitude.
 
