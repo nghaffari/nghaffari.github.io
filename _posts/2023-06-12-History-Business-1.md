@@ -2,7 +2,7 @@
 layout: distill
 title: "From History to Business Part I: Scouting"
 description: The importance of scouting in ancient warfare and modern business
-tags: business, history
+tags: business history
 giscus_comments: false
 date: 2023-06-12
 
