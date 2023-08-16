@@ -30,7 +30,7 @@ There are a few considerations when dealing with chaotic trends that this articl
 2. **measurement uncertainty**: data and trends are often treated as certain fact. In reality most data is collected and curated by humans and human systems. This creates a real possibility for measurement errors as well as discrepancies arising from measurement methodologies.
 3. **external covariates**: the fundamental process behind scientific reasoning is crucial for taming seemingly unpredictable trends: associating some variables to the outcome of others. With robust patterns of association between variables we can use information on accessible variables to predict outcomes in (potentially inaccessible) variables.
 
-The next section looks at a few of the wild trends of the current period, specifically relating to labor markets. There are many other shifting patterns in things like real estate markets and climate data. The three considerations listed above are highlighted as trends are discussed. The subsequent section turns to a discussion about quantitative analysis and general overview of some methods for handling extreme data.
+The next section looks at a few of the wild trends of the current period, specifically relating to US labor markets. The three considerations listed above are highlighted as trends are discussed. The subsequent section turns to a discussion about quantitative analysis and general overview of some methods for handling extreme data.
 
 ## Perplexing Labor Market Trends
 
@@ -43,7 +43,9 @@ From July 2010 to July 2020, the total disabled population increased from about 
 <div class="embed-container">
   <iframe src="https://fred.stlouisfed.org/graph/graph-landing.php?g=17QX9&width=670&height=475" scrolling="no" frameborder="0" style="overflow:hidden;" allowTransparency="true" loading="lazy"></iframe>
 </div>
-
+<div class="caption">
+    Reprinted from the St. Louis FED's FRED web page found in <d-cite key="FRED2023"></d-cite>.
+</div>
 <script src="https://fred.stlouisfed.org/graph/js/embed.js" type="text/javascript"></script>
 
 The causes of this sudden rise in the disabled population are contested. Some theories tie the increased disabling to long covid. While some studies have shown most long covid symptoms abate within a year, others contend that certain effects, such as chronic fatigue, may persist<d-cite key="bonuck2023"></d-cite>. Others think environmental toxins, the legacy of pandemic era policies (e.g. reduced general medical visits), climate change, and host of other factors many driving the increased disabling. Still others think changes in reporting standards may be contributing. In all likelihood, there is a convergence of different factors driving an increase of this magnitude.
@@ -56,6 +58,20 @@ Labor productivity declines continued in Q1 of 2023 with 1.2% decline. In a posi
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.html path="assets/img/labor-productivity-outpu.png" title="labor productivity" class="img-fluid rounded z-depth-1" %}
     </div>
+</div>
+<div class="caption">
+    Reprinted from the US Bureau of Labor Statistics' recent nonfarm labor productivity data here in <d-cite key="BLS2023"></d-cite>.
+</div>
+
+Mental health trends can be indicative of the overall health of a society and directly impact labor productivity. Current US mental health trends present a bleak picture. One study aggregated data from the National Health Interview Survey from 1997 to 2016 to assess ADHD diagnoses in the US. The study found an increase in diagnoses from 6.1% in 1997-1998 to 10.2% in 2015-2016<d-cite key="xuetal2018"></d-cite>. Recent Gallup polling indicates that the rates of those ever having a depression diagnosis (29%) and those with a current depression diagnonsis (17.8%) both hit all-time highs<d-cite key="witters2023"></d-cite>. An astounding 18% of Americans 18-54 will suffer from an anxiety-related disorder in a given year<d-cite key="hopkins2023"></d-cite>. Causation has been variously attributed to overdiagnosis, overmedication, pandemic era social effects, poor diet, environmental pollution, and an increasingly materialistic perspective in society. There are strong arguments for many of these individual causes, and the macro patterns are likely the result of a combination of various causes coinciding.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/g_depress.png" title="labor productivity" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Reprinted from recent Gallup polling depicted in the article by Dan Witters here in <d-cite key="witters2023"></d-cite>.
 </div>
 
 ## Unpredictable NOT Unmanageable
