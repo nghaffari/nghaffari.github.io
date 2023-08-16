@@ -2,7 +2,7 @@
 layout: distill
 title: "Unpredictable Trends"
 description: A survey of current chaotic trends and a discussion on managing unpredictability
-tags: AI/ML, business
+tags: 
 giscus_comments: false
 date: 2023-08-14
 
