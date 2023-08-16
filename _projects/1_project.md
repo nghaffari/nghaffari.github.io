@@ -2,7 +2,7 @@
 layout: page
 title: Warranty Cost Analysis 
 description: Statistical analysis and predictive modeling of warranty claims for a major global automotive parts manufacturer
-img: assets/img/car_line.jpg
+img: assets/img/car_line.png
 importance: 3
 category: work
 ---
@@ -22,16 +22,13 @@ In many data science projects, data collection and preparation are the most time
 * **missing data**: some data values were missing in a given data set; some values were present in one data but absent from another (where they should also appear)
 * **unstandardized data**: some data fields were not standardized, resulting in multiple spellings/representations of the same values
 
-While these issues can be worked through and resolved, this typically uses a fair amount of work. The process requires a constant back and forth between the business leaders who understand their particular domain and data and the analysts and data scientists working the data. Some foresight, planning, and data engineering can make the data collection and preparation steps far less time-consuming. Among suggestions were:
+While these issues can be worked through and resolved, this typically uses a fair amount of work. The process requires a constant back and forth between the business leaders with direct domain insight and the analysts and data scientists working the data. Some foresight, planning, and data engineering can make the data collection and preparation steps far less time-consuming. Among suggestions were:
 
-1. **standardizsation**: standardization of data (standard values, spellings, etc.), standardization of data storage formatting
+1. **standardization**: standardization of data (standard values, spellings, etc.), standardization of data storage formatting
 2. **automation**: automated data entry to reduce errors, misspellings, missing values
 3. **integrated information systems**: integrating information systems across different departments and even with clients to unify data sources
-
-Proper implementation of these principles during data entry and storage greatly improves the ease and efficiency of data collection and the reduces the steps and resources necessary for data prep. A fourth suggestion is a critical principle that is key to the success of any analytics project:
-
 4. **problem definition**: define the problem at hand in clear and direct terms
 
-Good problem definition makes it clear what data is needed and what modeling frameworks might be worth exploring. Data projects are only valuable insofar as they are in line with an organizations objectives.
+Proper implementation of these principles during data entry and storage greatly improves the ease and efficiency of data collection and the reduces the steps and resources necessary for data prep. The fourth suggestion is a critical principle that is key to the success of any analytics project. Good problem definition makes it clear what data is needed and what modeling frameworks might be worth exploring. Data projects are only valuable insofar as they are in line with an organizations objectives.
 
-Although many suggestions for improvements to future data collection projects were made, the firm was already aware of some of these shortcomings. They had already implemented more automated data collection and more stringent standardization while actively working toward more data integration within the firm and with clients. 
+Although many suggestions for improvements to future data collection projects were made, the firm was already aware of some of these shortcomings. They had already implemented more automated data collection and more stringent standardization while actively working toward more data integration across the firm and with clients. This project reinforced the needs and elucidated where savings in resources spent on data prep were to be found.
