@@ -32,3 +32,9 @@ While these issues can be worked through and resolved, this typically uses a fai
 Proper implementation of these principles during data entry and storage greatly improves the ease and efficiency of data collection and the reduces the steps and resources necessary for data prep. The fourth suggestion is a critical principle that is key to the success of any analytics project. Good problem definition makes it clear what data is needed and what modeling frameworks might be worth exploring. Data projects are only valuable insofar as they are in line with an organizations objectives.
 
 Although many suggestions for improvements to future data collection projects were made, the firm was already aware of some of these shortcomings. They had already implemented more automated data collection and more stringent standardization while actively working toward more data integration across the firm and with clients. This project reinforced the needs and elucidated where savings in resources spent on data prep were to be found.
+
+# Weibull Modeling of Component Failures
+
+The *Weibull** distribution is an extreme value distribution. Its importance to extreme value theory comes from the Fisher-Tippett-Gnedenko theorem. At a high level, the theorem says that if the distribution of the maxima (or minima) of a sequence of iid (independent and identically distributed) random variables converges to a distribution, it must be either a Weibull, a Gumbel, or a Frechet distribution. In a nutshell it is like a central limit theorem for extreme values of samples.
+
+The application to failure modeling comes from the observation that many component failures are the result of extreme events (e.g., the brake pad with greatest wear is likely to give out earliest). Hence extreme value distributions are prime candidates. 
