@@ -2,7 +2,7 @@
 layout: page
 title: Product Defect Classification
 description: Categorizing product defect patterns using the Chinese restaurant process and the Indian buffet process
-img: assets/img/7.jpg
+img: assets/img/defectiveWafers_T1.png
 importance: 1
 category: work
 ---
