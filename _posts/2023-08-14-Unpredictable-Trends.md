@@ -2,7 +2,7 @@
 layout: distill
 title: "Unpredictable Trends"
 description: A survey of current chaotic trends and a discussion on managing unpredictability
-tags: 
+tags: AI/ML business
 giscus_comments: false
 date: 2023-08-14
 
@@ -14,7 +14,7 @@ bibliography: 2023-Trends.bib
 
 toc:
   - name: Chaotic Signals
-  - name: The World's Gone Mad
+  - name: Perplexing Labor Markets
   - name: Unpredictable NOT Unmanageable
 ---
 
@@ -30,9 +30,9 @@ There are a few considerations when dealing with chaotic trends that this articl
 2. **measurement uncertainty**: data and trends are often treated as certain fact. In reality most data is collected and curated by humans and human systems. This creates a real possibility for measurement errors as well as discrepancies arising from measurement methodologies.
 3. **external covariates**: the fundamental process behind scientific reasoning is crucial for taming seemingly unpredictable trends: associating some variables to the outcome of others. With robust patterns of association between variables we can use information on accessible variables to predict outcomes in (potentially inaccessible) variables.
 
-## The World's Gone Mad
+## Perplexing Labor Markets
 
-Currently many trends are showing drastic departures from past behaviors. Here several abnormal trends and patterns are reviewed and discussed. These abnormalities in turn can drive other irregularities in economic data. Abnormal trends, particularly toward extreme patterns, are typical in systems with reinforcement loops. That is, feedback from prior outcomes or actions drives continued intensification of trends (e.g., in anticipation of an angry response, an individual becomes defensive, inducing an angrier response from ther other party, leading to more defensiveness).
+Many current trends show drastic departures from past behaviors. Below several abnormal trends and patterns relating the labor markets are reviewed and discussed. These abnormalities in turn can drive other irregularities in economic data. Abnormal trends, particularly toward extreme patterns, are typical in systems with reinforcement loops. That is, feedback from prior outcomes or actions drives continued intensification of trends (e.g., in anticipation of an angry response, an individual becomes defensive, inducing an angrier response from the other party, leading to more defensiveness). After a while excessive positive reinforcement loops can trigger negative reinforcement loops (e.g., a global pandemic kills the most vulnerable, increasing death rates; but with reduced vulnerable populations, death rates post pandemic may decrease).
 
 The labor data from the United States appears to show a mass disabling event occurring from 2020 through 2023. This data is collected by the US Bureau of Labor Statistics and aggregated and published by the Federal Reserve of St. Louis' economic data research unit (FRED)<d-cite key="FRED2023"></d-cite>.
 
