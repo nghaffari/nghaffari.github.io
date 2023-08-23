@@ -176,7 +176,7 @@
 
 <p>The application to failure modeling comes from the observation that many component failures are the result of extreme events (e.g., the brake pad with greatest wear is likely to give out earliest). Hence extreme value distributions are prime candidates. There are some cases where the Frechet and Gumbel distributions are better suited. This depends on the tail index of the input distributions that are converging in extreme value. A detailed discussion is avoided here, see, for example, (<a href="https://doi.org/10.1016/j.jmva.2015.10.015" rel="external nofollow noopener" target="_blank">Stupfler 2016</a>). The Weibull is generally the favored distribution when tails are lighter. However, the Weibull can accommodate a range of tail thickness through its shape parameter \(k\). When \(k&gt;1\), the Weibull distribution has subexponential tails. When \(k&lt;1\) the tails are thicker than that of an exponential distribution. When \(k=1\) its tails are exponential. In fact, when \(k=1\) the distribution reduces to an exponential distribution. The probability density function for the Weibull is:</p>
 
-<p>\(\)\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{\left(\frac{x}{\lambda}\right)^k}\(\)</p>
+\[\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{\left(\frac{x}{\lambda}\right)^k}\]
 
 <p>Below the density and distribution functions are depicted for four Weibull distributions, where the scale parameters \(\lambda\) are set to \(1\) and the sahpe parameters are varied. Note that some sources also add a location shift to move the distribution left or right, here only two parameter Weibulls are depicted.</p>
 
@@ -208,7 +208,7 @@
 
 <p>While the Weibull distribution is robust and versatile, it has its limits. One of the criticisms of the Weibull is that it cannot accommodate “bathtub” failure patterns. The “bathtub” signal is a known pattern in failure modeling corresponding to the scenario where failures are increased <em>both</em> early and <em>late</em> in a products lifecycle. The early failures may be attributed to faulty manufacturing processes and the later failures to accumulated component damage. In 1993, Mudholkar and Srivastava published an expanded version of the Weibull, the exponentiated Weibull distribution, that can model bathtub failure patterns. The distribution adds another parameter \(\alpha\):</p>
 
-<p>\(\)\alpha\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}\left(1-e^{\left(\frac{x}{\lambda}\right)^k}\right)^{\alpha-1}e^{\left(\frac{x}{\lambda}\right)^k}\(\)</p>
+\[\alpha\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}\left(1-e^{\left(\frac{x}{\lambda}\right)^k}\right)^{\alpha-1}e^{\left(\frac{x}{\lambda}\right)^k}\]
 
 <p>For this project, the Weibull generally performed well in modeling cumulative failure patterns across different combinations of product family and client. There were a few combinations of customer and product family where the Weibull performed somewhat poorly. A closer look at these combinations revealed the failure data was more volatile than the other cases, and there were several change points in the failure patterns of these combinations. In particular, for these cases, the pandemic shutdown era appeared to have a more profound impact on the failure patterns than for other cases. To address these cases a more complex modeling framework and/or separation of data across change points (and possibly covariates is required.</p>
 
