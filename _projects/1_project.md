@@ -29,9 +29,9 @@ While these issues can be worked through and resolved, this typically uses a fai
 3. **integrated information systems**: integrating information systems across different departments and even with clients to unify data sources
 4. **problem definition**: define the problem at hand in clear and direct terms
 
-Proper implementation of these principles during data entry and storage greatly improves the ease and efficiency of data collection and the reduces the steps and resources necessary for data prep. The fourth suggestion is a critical principle that is key to the success of any analytics project. Good problem definition makes it clear what data is needed and what modeling frameworks might be worth exploring. Data projects are only valuable insofar as they are in line with an organizations objectives.
+Proper implementation of these principles during data entry and storage greatly improves the ease and efficiency of data collection and the reduces the steps and resources necessary for data prep. The fourth suggestion is a critical principle that is key to the success of any analytics project. Good problem definition makes it clear what data is needed and what modeling frameworks might be worth exploring. Data projects are only valuable insofar as they are in line with an organization's objectives.
 
-Although many suggestions for improvements to future data collection projects were made, the firm was already aware of some of these shortcomings. They had already implemented more automated data collection and more stringent standardization while actively working toward more data integration across the firm and with clients. This project reinforced the needs and elucidated where savings in resources spent on data prep were to be found.
+Although many suggestions for improvements to future data collection projects were made, the firm was already aware of some of these shortcomings. They had already implemented more automated data collection and more stringent standardization while actively working toward more data integration across the firm and with clients. This project reinforced the firm's needs and elucidated where savings in resources spent on data prep were to be found.
 
 # Weibull Modeling of Component Failures
 
