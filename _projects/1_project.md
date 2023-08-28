@@ -41,7 +41,7 @@ The application to failure modeling comes from the observation that many compone
 
 $$\frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-\left(\frac{x}{\lambda}\right)^k}$$
 
-Below the density and distribution functions are depicted for four Weibull distributions, where the scale parameters $$\lambda$$ are set to $$1$$ and the sahpe parameters are varied. Note that some sources also add a location shift to move the distribution left or right, here only two parameter Weibulls are depicted. 
+Below the density and distribution functions are depicted for four Weibull distributions, where the scale parameters $$\lambda$$ are set to $$1$$ and the shape parameters are varied. Note that some sources also add a location shift to move the distribution left or right, here only two parameter Weibulls are depicted. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
