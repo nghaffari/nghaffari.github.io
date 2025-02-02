@@ -54,8 +54,8 @@
       description:
         - title: Statistical modeling and preliminary estimates
           contents:
-            - Developed several linear models for forecasting passenger enplanement datasets from TSA insepction counts
-            - Developed SARIMA-GARCH modeling framework for predicting vehicle miles traveled, transit, Amtrak, and TransBorder data sets
+            - Developed several linear models for forecasting passenger enplanement datasets from TSA inspections for informing decision-making on air passenger traffic and airport routing
+            - Developed SARIMA-GARCH modeling framework for predicting vehicle miles traveled, transit, Amtrak, and TransBorder data sets enabling faster, more accurate investment decisions in the transportation sector
             - Prepared writeups detailing methodology and analysis for guiding users
             - Won award in 2024 for improving the timeliness of agency data releases with predictive models 
         - title: Designed schema for migrating National Transportation Statistics data from spreadsheets to a SQL database
@@ -66,12 +66,12 @@
         - title: National Secure Data Service (NSDS) Demonstration (NSDS-D)
           contents:
             - Served on interagency federal committees for designing and developing an NSDS-D, pursuant to the CHIPS and Science Act of 2022
-            - Proposed an AI project for data quality, standardization, and integration that was accepted and funded for $750,000 <a href="https://www.americasdatahub.org/award-ai-dqsi-24/">AI-DQSI</a>
-            - Worked with contractors to ensure AI project progress and relevancy
+            - Drafted <a href="https://www.americasdatahub.org/wp-content/uploads/2024/06/ATT-1_Topic_AI-DQSI.pdf">proposal</a> for an AI project addressing data quality, standardization, and integration needs of federal statistical agencies that was accepted and funded for $750,000 <a href="https://www.americasdatahub.org/award-ai-dqsi-24/">AI-DQSI</a>
+            - Coordinated with contractors to determine project workflow and to ensure AI project progress and relevancy
             - Served on subcommittee determining NSDS governance and implementation process
         - title: VIUS analysis and report
           contents:
-            - Analyzed VIUS survey data producing a statistical summary of general characteristics of the national truck fleet and safety and environmental technology adoption
+            - Analyzed VIUS survey data producing a statistical summary of general characteristics of the national truck fleet and safety and autonomous technology adoption to inform future investment needs and strategy
             - Worked with contractors to turn turn statistical writeup into a written report on VIUS findings
     - title: Lead Content Developer and Faculty
       institution: SetCONNECT, Inc.
@@ -83,7 +83,8 @@
             - Intro to Statistics and Data Visualization in R
             - Business Statistics
             - Predictive Modeling for Real-World Problems
-        - title: Developed seminars and introductory courses on statistics for several Indian corporations and educational institutions
+            - AI Present State and Future Trends
+        - title: Developed seminars and introductory courses on data science and AI for several Indian corporations and educational institutions
           contents:
             - Indo-American Chamber of Commerce
             - TVS Group
@@ -94,6 +95,7 @@
         - title: Worked on several data science and analytics projects for clients
           contents:
             - Warranty cost analysis and predictive modeling for ZF CVS
+            - Market share analysis and improving aftermarket sales profitability for Lucas TVS
         - Participated in business development strategy and planning, designing core operational tactics for future business directions
     - title: Adjunct Faculty
       institution: Southern Methodist University
@@ -106,9 +108,9 @@
             - Assisted on monthly planning meetings to determine scope and design of the data science program
         - title: Designed and taught PPA 6303 ‘Statistical Methods for Policymaking’
           contents:
-            - Designed course for introducing public policy majors to statistical methods and reasoning while introducing the federal statistical system
+            - Designed course teaching public policy majors statistical methods and reasoning while introducing the federal statistical system
             - Structured course to balance foundational principles, breadth of exposure, and hands-on analytical experience with R
-            - Taught the course to masters’ students in public policy, teaching first principles and computational implementation
+            - Taught the course to master’s students in public policy, teaching first principles and demonstrating computational implementation
     - title: Head of Data and Analytics
       institution: Nulixir, Inc.
       year: Jan 2021 - Aug 2024
@@ -124,6 +126,7 @@
             - Researching evidence for the clinical effects of key active ingredients
             - Reporting potential adverse effects, allergenicity, and toxicity
             - Finding potential product formulation difficulties (e.g., instability, poor taste, etc.)
+            - Leading analysis on project development agreements, providing product development insights based on scientific publications to corporate clients
         - title: Marketing-related activities involved
           contents:
             - Analyzing Google search and social media data to determine nutraceutical opinion trends
