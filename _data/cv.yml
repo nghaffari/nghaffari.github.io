@@ -95,7 +95,7 @@
       institution: Southern Methodist University
       year: Oct 2021 - present
       description:
-          - title: Taught DDS 6306 ‘Doing Data Science’
+        - title: Taught DDS 6306 ‘Doing Data Science’
           contents:
             - Taught an introductory data science course covering the basics of statistics, modeling, and common tech platforms for working professional data science master’s students
             - Troubleshooted several issues in the course material related to outdated content
