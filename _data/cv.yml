@@ -55,7 +55,7 @@
         - title: Statistical modeling and preliminary estimates
           contents:
             - Developed several linear models for forecasting passenger enplanement datasets from TSA insepction counts
-            - Developed SARIMA modeling framework for predicting vehicle miles traveled, transit, Amtrak, and TransBorder data sets
+            - Developed SARIMA-GARCH modeling framework for predicting vehicle miles traveled, transit, Amtrak, and TransBorder data sets
             - Prepared writeups detailing methodology and analysis for guiding users
             - Won award in 2024 for improving the timeliness of agency data releases with predictive models 
         - title: Designed schema for migrating National Transportation Statistics data from spreadsheets to a SQL database
