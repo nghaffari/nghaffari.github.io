@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Started teaching as an adjunct faculty with SMU's graduate data science program
+Started teaching as an adjunct faculty with SMU's graduate data science program.
