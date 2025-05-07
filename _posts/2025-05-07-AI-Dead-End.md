@@ -18,7 +18,24 @@ toc:
   - name: Unpredictable NOT Unmanageable
 ---
 
+## Big Data
+
+AI needs data. Quite a bit of it. 
+
+The amount needed varies depending on model complexity, computational resources available, and performance requirements. Data needs scale with model complexity.  
+
+DeepMind, an AI startup that was acquired by Google in 2013, confirmed this with recent research on AI training. In 2022, DeepMind presented a study comparing the impacts of model parameters and training data on AI performance. The group found optimal systems scale model size and data size concurrently: for each doubling of model size, the size of the training data should be doubled. The team trained a system called Chinchilla (70B parameters trained on 1.4T tokens of data) which outperformed the following AI systems<d-cite key="hoffmanetal2022"></d-cite>:
+* Gopher (280B trained on 300B)
+* GPT-3 (175B trained on 300B)
+* Jurassic (178B trained on 300B)
+* Megatron-Turing NLG (530B trained on 270B)
+
+Of course, the learning architecture and implementation of AI are important drivers of performance too. But ultimately AI is a reflection of the scale and quality of data used to train the system <d-cite key="oliveri2024"></d-cite>. Current AI systems are essentially advanced data processing systems using algorithmic data processing and statistical inference routines. In fact, much of the recent progress in large language models (LLM) and AI systems has come from algorithmic advancements allowing for higher throughput data processing (e.g., for the original paper introducing the transformer architecture see <d-cite key="vaswanietal2017"></d-cite>, and for a fantastic overview of recent AI developments see  <d-cite key="ray2023"></d-cite>) alongside engineering advancements producing computer chips with powerful data processing advantages (e.g., Google's TPU <d-cite key="evenden2022"></d-cite>, <d-cite key="tyson2024"></d-cite>; Nvidia's GPU series <d-cite key="walton2024"></d-cite>, <d-cite key="walton2025a"></d-cite>, <d-cite key="walton2025b"></d-cite>; and Huawei's Ascend GPU series <d-cite key="shilov2025"></d-cite>).
+
+
 ## End of the Data Road
+
+Researchers with a sense of humor at Stanford and Rice have dubbed the phenomenon "model autophagy disorder" or MAD. Recently a flurry of articles have come out highlighting these limitations of AI and large language models, e.g. <d-cite key="dupre2024"></d-cite>, <d-cite key="AFP2024"></d-cite>.
 
 Kristian Hammond of Northwestern University describes this as follows in an article called "Degenerative AI":
 > The key insight here is that generative AI systems are based on probabilities. They're designed to predict and generate the most likely next word or image based on their training data. However, if their outputs start seeding future training datasets, the models will inevitably become more likely to generate the “most probable,” iteratively converging on narrower and narrower forms of expression. This is neither good for creativity nor for maintaining a realistic diversity of responses. 
